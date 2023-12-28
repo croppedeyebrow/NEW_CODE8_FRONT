@@ -10,19 +10,20 @@ import {
 } from "../../style/music/MusicUpdateStyle";
 import UpdateBox from "../../component/musicList/UpdateBox";
 import UpdateUserInfo from "../../component/musicList/UpdateUserInfo";
+import UseAuth from "../../hooks/UseAuth";
 
 const MusicRegistPage = () => {
   const navigate = useNavigate();
 
-  const email = window.localStorage.getItem("email");
+  const email = UseAuth();
   console.log(email);
 
-  useEffect(() => {
-    if (!email) {
-      alert("로그인이 필요합니다.");
-      navigate("/login");
-    }
-  }, [email]);
+  // useEffect(() => {
+  //   if (!email) {
+  //     alert("로그인이 필요합니다.");
+  //     navigate("/login");
+  //   }
+  // }, [email]);
 
   if (!email) {
     // 로그인되어 있지 않은 경우
