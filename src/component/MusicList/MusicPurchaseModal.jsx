@@ -9,6 +9,15 @@ const ModalComponent = ({ onConfirm, onCancel, children }) => {
     backgroundColor: "#fff",
     padding: "20px",
     zIndex: "1000",
+    display: "flex",
+    flexDirection: "column",
+    alignitems: "center",
+    justifyContent: "center",
+    gap: "0.5rem",
+    borderRadius: "10px", // 모서리를 둥글게 만듭니다.
+    boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)", // 그림자를 추가합니다.
+    width: "20rem", // 모달창의 너비를 조절합니다.
+    height: "14rem", // 모달창의 높이를 조절합니다.
   };
 
   const overlayStyle = {

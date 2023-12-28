@@ -14,7 +14,7 @@ const inputStyle = {
   fontWeight: "bold",
   width: "25rem",
   height: "4rem",
-  border: "0.2rem solid #ffcdd2",
+  // border: "0.2rem solid #ffcdd2",
   borderRadius: "0.5rem",
   outline: "none",
 };

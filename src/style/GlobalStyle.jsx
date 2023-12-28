@@ -3,12 +3,14 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     *{
         box-sizing: border-box;
+        
     }
     
     body {
         margin: 0px;
         padding: 0px;
         font-family: 'Noto Sans KR', sans-serif;
+        max-width:192rem;
         
     }
 
@@ -28,4 +30,3 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default GlobalStyle;
- 
